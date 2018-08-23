@@ -3,6 +3,7 @@
 
 import os
 import sys
+import io
 
 try:
     from setuptools import setup
@@ -23,7 +24,7 @@ setup(
     name='django-postgrespool',
     version='0.3.1',
     description='Postgres Connection Pooling for Django.',
-    long_description=open('README.rst').read(),
+    long_description=io.open('README.rst', encoding='utf-8').read(),
     author='Kenneth Reitz',
     author_email='me@kennethreitz.com',
     url='https://github.com/kennethreitz/django-postgrespool',
